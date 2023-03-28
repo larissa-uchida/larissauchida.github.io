@@ -1,0 +1,73 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    position: relative;
+}
+
+.container {
+    background-color: #f3e5f5;
+    border-radius: 45px;
+    z-index: 1;
+    width: 1200px;
+    height: 520px;
+    margin: 7% auto;
+    box-shadow: 17px 1pc rgba(146, 130, 169, 0.476);
+}
+
+@keyframes mover-cima-baixo {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.container img {
+    float: left;
+    display: inline-block;
+    animation: mover-cima-baixo 3s infinite; 
+    margin-left: 6%;
+}
+
+h1 {
+    display: inline-block;
+    margin-top: 4%;
+    font-size: 45px;
+    margin-right: 6%;
+}
+
+.botoes {
+    margin-top: 6%;
+    margin-left: 56%;
+    width: 350px;
+}
+
+.botoes button {
+    width: 320px;
+    height: 70px;
+    margin: 13px;
+    border-color: #3131311d;
+    border-radius: 45px;
+    border-style: solid;
+    background-color: #ffcbdb;
+}
+
+.botoes a button {
+    font-family: Nunito;
+    font-size: 21px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: black;
+}
+
+.botoes button:hover{
+    background-color: #f3bfce;
+    text-decoration: underline;
+}
+
+.botoes button:active{
+    background-color: #f5a8be ;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+  }
+
