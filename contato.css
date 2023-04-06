@@ -1,94 +1,11 @@
-#frase {
+.hd {
+    background-color: bisque;
     width: 100%;
-    font-family: nunito;
-    font-size: 40px;
+    text-align: center;
     margin-top: 5%;
-    text-align: center;
 }
 
-.all {
-    width: 400px;
-    margin: 5% auto;
-    position: relative;
-}
-
-.contatos {
-    background-image: url(assets/note.png);
-    background-size: 330px 180px;
-    width: 330px;
-    height: 180px;
-    margin-bottom: 5%;
-    position: relative;
-}
-
-#discord {
-    font-family: nunito;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 9%;
-    margin-left: 25%;
-    color:rgb(117, 114, 114);
-}
-
-#discord2 {
-    text-align: center;
-    font-family: nunito;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 17.5%;
-    margin-left: 25%;
-}
-
-#email {
-    font-family: nunito;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 29%;
-    margin-left: 25%;
-    color: rgb(117, 114, 114)
-}
-
-#email2 {
-    font-family: nunito;
-    font-size: 18px;
-    position: absolute;
-    margin-top: 39%;
-    margin-left: 25%;
-}
-
-.redes {
-    width: 400px;
-    margin: 2% auto;
-    display: inline-block;
-}
-
-.redes a {
-    margin-left: 5%;
-}
-
-#home {
-    font-family: nunito;
-    font-size: 30px;
-    text-decoration: none;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-}
-
-#home:hover{
-    text-decoration: underline;
-}
-
-#home:active{
-    color: #DB7093;
-}
-
-#cat {
-    float: right;
-    background-color: blue;
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    margin-bottom: 0px;
-    bottom: 0;
+h1 {
+    font-family: "Rubik";
+    font-size: 45px;
 }

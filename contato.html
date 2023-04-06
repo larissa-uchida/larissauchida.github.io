@@ -10,28 +10,25 @@
     <link rel="stylesheet" href="contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p id="frase">Entre em contato comigo!</p>
-    <div class="all">
-        <ul class="contatos">
-            <li id="discord">Discord:</li>
-            <li id="discord2">azuki#4097</li>
-            <li id="email">Email:</li>
-            <li id="email2">larissa.uchiida@gmail.com</li>
-        </ul>
+    <header class="hd">
+        <h1>Entre em contato comigo!</h1>
+    </header>
 
-        <nav class="redes">
-            <a href="https://github.com/larissa-uchida"><img src="assets/github-icon.png" alt="github-icon"></a>
-            <a href="https://www.linkedin.com/in/larissa-uchida-438026263/"><img src="assets/linkedin-icon.png" alt="linkedin-icon"></a>
-            <a href="https://www.instagram.com/larissa_uchida/"><img src="assets/instagram-icon.png" alt="instagram-icon"></a>
-        </nav>
-    </div>  
-    <a id='home' href="index.html">home</a>
-
-    <footer>
-        <img id="cat" src="/assets/cat-footer.png">
-    </footer>
+    <main>
+        <form action="mailto:larissa.uchiida@gmail.com" method="POST" enctype="text/plain">
+            Seu Nome:<br/>
+            <input name="nome"/><br/>
+            Seu E-mail:<br/>
+            <input name="email"><br/>
+            Sua Mensagem:<br/>
+            <textarea name="mensagem" rows="8"></textarea><br/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpar"/>
+        </form>
+    </main>
 </body>
 </html>

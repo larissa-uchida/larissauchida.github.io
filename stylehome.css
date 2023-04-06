@@ -1,73 +1,100 @@
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    position: relative;
+    background-color: rgb(252, 221, 227);
+    font-family: "Rubik";
+}
+
+.circle {
+    background-color: rgba(244, 165, 230, 0.34);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 130px;
+    margin-left: 18%;
+    margin-top: 1.5%;
 }
 
 .container {
-    background-color: #f3e5f5;
-    border-radius: 45px;
-    z-index: 1;
-    width: 1200px;
-    height: 520px;
-    margin: 7% auto;
-    box-shadow: 17px 1pc rgba(146, 130, 169, 0.476);
+    background-color: blue;
+    width: 970px;
+    margin: 9% auto;
+    position: relative;
 }
 
 @keyframes mover-cima-baixo {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+    50% { transform: translateY(-9px); }
     100% { transform: translateY(0); }
 }
 
-.container img {
-    float: left;
-    display: inline-block;
-    animation: mover-cima-baixo 3s infinite; 
-    margin-left: 6%;
+#icon {
+    animation: mover-cima-baixo 3.5s infinite; 
+    position: absolute;
 }
 
 h1 {
-    display: inline-block;
-    margin-top: 4%;
-    font-size: 45px;
-    margin-right: 6%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 50px;
+    position: absolute;
 }
 
-.botoes {
-    margin-top: 6%;
-    margin-left: 56%;
+p {
+    background-color: rgba(174, 174, 174, 0.064);
+    line-height: 28px;
+    margin-left: 45%;
+    position: absolute;
+    margin-top: 11.5%;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.links {
+    position: absolute;
+    margin-left: 49%;
+    margin-top: 31%;
     width: 350px;
 }
 
-.botoes button {
-    width: 320px;
-    height: 70px;
-    margin: 13px;
-    border-color: #3131311d;
-    border-radius: 45px;
-    border-style: solid;
-    background-color: #ffcbdb;
+.links div {
+    width: 100px;
+    display: inline-block;
+    padding-left: 4%;
 }
 
-.botoes a button {
-    font-family: Nunito;
-    font-size: 21px;
-    text-transform: lowercase;
-    text-decoration: none;
-    color: black;
+.links img:hover {
+    width: 96px;
 }
 
-.botoes button:hover{
-    background-color: #f3bfce;
-    text-decoration: underline;
-}
-
-.botoes button:active{
-    background-color: #f5a8be ;
-}
-
-button:hover, a:hover {
-    cursor: pointer;
+a.tooltip:before {
+    content: attr(data-title);
+    background-color: #7d265c;
+    color: #FFF;
+    font-size: 20px;
+    font-family: "Rubik";
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -50px;
+    width: 274px;
+    opacity: 0;
+    transition: all .3s ease;
   }
-
+  a.tooltip:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 288px;
+    bottom: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #7d265c transparent;
+    transition: all .3s ease;
+  }
+  a.tooltip:hover:after,
+  a.tooltip:hover:before {
+    opacity: 1;
+  }
