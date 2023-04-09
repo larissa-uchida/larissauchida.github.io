@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(249, 232, 236);
+    font-family: "Rubik";
+}
+
+.error-page {
+    width: 600px;
+    height: 500px;
+    margin: 8% auto;
+    position: relative;
+  }
+
+.error-page img {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 85px;
+  }
+
+.error-page  h1 {
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+.error-page p {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 180px;
+}
+
+a {
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 120px;
+    color: rgb(235, 142, 161);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(157, 95, 107);
+}
